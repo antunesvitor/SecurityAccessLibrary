@@ -57,11 +57,11 @@ namespace SecurityAPI
                         }
                         if(getAccess){
                             Console.WriteLine("Ação permitida");
+                            await next();
                         }
                         else{
                             SendResponse(context, message, 401);
                         }
-                        // SendResponse(context, "sucesso até agora", 200);
                     }
                     else
                     {

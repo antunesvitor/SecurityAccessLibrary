@@ -1,6 +1,6 @@
-namespace SecurityAPI.Models
+namespace SecurityAPI.Models.Relations
 {
-    public class Endpoint
+    public class ScreenProfile
     {
         public long id { get; set; }
         public long endpoint_id { get; set; }
